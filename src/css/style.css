@@ -1,0 +1,34 @@
+.X-axis{
+	font-family: arial;
+	font-size: 0.7em;
+}
+.Y-axis{
+	font-family: arial;
+	font-size: 0.7em;
+}
+.X-axis path{
+	stroke: white;
+	
+	display: none;
+}
+.Y-axis path{
+	stroke: white;
+	
+	display: none;
+}
+.rectangle_elem{
+	stroke : grey;
+	fill:transparent;
+	opacity: 0.8;
+	
+}
+.data{
+	fill:transparent;
+	
+	stroke-width:2;
+}
+.age{
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}

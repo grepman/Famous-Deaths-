@@ -1,0 +1,128 @@
+ <link rel="stylesheet" href="./src/css/style.css">
+<script src="./lib/d3.v3.min.js" charset="utf-8"></script>
+<script src="./src/js/graph.js" charset="utf-8"></script>
+
+
+
+
+<svg id="visualisation" width="1000" height="900"></svg>
+
+
+<script>
+
+var source_data = [{
+	"name" : "Kurt Cobain", 
+	"age" : 27,
+	"week" : 7,
+	"group" : "a"
+},
+{
+	"name" : "Jim Morrison", 
+	"age" : 27,
+	"week" : 28,
+	"group" : "c"
+},
+{
+	"name" : "Janis Joplin", 
+	"age" : 27,
+	"week" : 37,
+	"group" : "b"
+},
+
+{
+	"name" : "Jimi Hendrix", 
+	"age" : 27,
+	"week" : 43,
+	"group" : "d"
+},
+{
+	"name" : "Amy Winehouse", 
+	"age" : 27,
+	"week" : 45,
+	"group" : "e"
+},
+{
+	"name" : "Mozart", 
+	"age" : 35,
+	"week" : 45,
+	"group" : "f"
+},
+{
+	"name" : "Elvis ", 
+	"age" : 42,
+	"week" : 33,
+	"group" : "g"
+},
+{
+	"name" : "JFK ", 
+	"age" : 46,
+	"week" : 37,
+	"group" : "h"
+},
+{
+	"name" : "Michael Jackson", 
+	"age" : 51,
+	"week" : 43,
+	"group" : "i"
+},
+{
+	"name" : "Steve Jobs", 
+	"age" : 56,
+	"week" : 33,
+	"group" : "j"
+},
+{
+	"name" : "Marilyn Monroe", 
+	"age" : 36,
+	"week" : 10,
+	"group" : "k"
+},
+{
+	"name" : " Martin Luther King", 
+	"age" : 39,
+	"week" : 12,
+	"group" : "l"
+},
+{
+	"name" : " John Lennon", 
+	"age" : 40,
+	"week" : 9,
+	"group" : "m"
+},
+{
+	"name" : "Osama Bin Laden", 
+	"age" : 54,
+	"week" : 8,
+	"group" : "n"
+},
+{
+	"name" : "Hitler", 
+	"age" : 56,
+	"week" : 2,
+	"group" : "o"
+},
+{
+	"name" : "Abraham Lincoln", 
+	"age" : 52,
+	"week" : 9,
+	"group" : "p"
+}];
+
+var ankit = new Grid_timeline({
+	data: source_data,
+	title: "Famous Deaths",
+	xLegend: "Week of the Year",
+	yLegend:"Age",
+	footer: "@ccantus",
+	renderOn: "#visualisation",
+	sorted : 1,
+	testing : 1
+}).render();
+
+
+//ankit._init();
+</script>
+
+
+
+
